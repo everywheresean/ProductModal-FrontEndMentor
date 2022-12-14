@@ -9,28 +9,44 @@
   <title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/output.css">
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
-
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
+<body class="bg-cream">
+  <div class="flex font-serif bg-white rounded-xl w-94">
+    <div class="flex-none w-48 relative">
+      <img src="images/image-product-desktop.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+    </div>
+    <form action="" class="flex-auto p-6">
+      <div class="flex">
+        <h1 class="flex-auto text-md font-semibold font-sans">PERFUME</h1>
+      </div>
+      <div class="flex">
+        <h1 class="flex-auto text-lg font-bold">Gabrielle Essence Eau De Parfum</h1>
+      </div>
+      <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2 font-sans">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
+      </div>
+      <div class="flex-auto p-6">
+        <p class="text-3xl font-bold text-green-800">$149.99</p><p class="text-2xl font-semibold text-gray-500"><s>$169.99</s></p>
+      </div>
+      <div class="flex space-x-4 mb-6 text-sm font-medium">
+        <div class="flex-none flex">
+          <button class="w-full h-10 px-6 font-semibold rounded-md font-sans bg-green-800 text-white">Add To Cart</button>
+        </div>
+      </div>
+      <p class="w-full flex-none text-sm font-medium font-sans">Free shipping on all continental US orders.</p>
+    </form>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Sean Do (EverywhereSean)</a>.
   </div>
 </body>
 </html>
